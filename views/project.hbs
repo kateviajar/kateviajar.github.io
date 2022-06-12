@@ -1,0 +1,25 @@
+<section id="project" class="section-box">
+    <div class="container">
+        <div class="section-title">
+            <h2>{{title}}</h2>
+        </div>
+        <div class="content">
+            <p>I have built projects related to JavaFX, Web app, ASP.NET, C#, JavaScript, also data analysis & visualization.</p>
+            <p>Check my <a href="https://github.com/kateviajar">GitHub</a> and <a href="https://public.tableau.com/app/profile/pao.hua.chien">Tableau</a> for more details!</p>
+        </div>
+    </div>
+
+    <div class="d-flex flex-wrap justify-content-center">
+        {{#each projects}}
+        <div class="image">
+            <img src="{{this.image}}" alt="{{this.name}}" class="rounded image_img">
+            <a href="{{this.githubLink}}" target="_blank">
+                <div class="image_overlay image_overlay-blur">
+                    <div class="image_title">{{this.name}}</div>
+                    <p class="image_description">{{this.description}}</p>
+                </div>
+            </a>
+        </div>
+        {{/each}}
+    </div>
+</section>
